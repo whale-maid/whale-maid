@@ -2,7 +2,7 @@
 # 2026-10-09 established. ASCII-only on purpose. Never pipe git's stderr: Windows
 # PowerShell turns it into a terminating error under ErrorActionPreference=Stop.
 # Usage: powershell -ExecutionPolicy Bypass -File tools\ws-backup.ps1 [-Dest E:\ws-backup]
-param([string]$Dest = "E:\ws-backup")
+param([string]$Dest = "D:\ws-backup")
 $ErrorActionPreference = "Continue"
 $root = Split-Path -Parent $PSScriptRoot
 New-Item -ItemType Directory -Force -Path $Dest | Out-Null
@@ -13,7 +13,8 @@ $repos = @(
   @{ Name = "whale-room.git";        Src = (Join-Path $root "whale-room") },
   @{ Name = "memory-tool.git";       Src = (Join-Path $root "memory-tool") },
   @{ Name = "dsh-pet-indesktop.git"; Src = (Join-Path $root "dsh-pet-indesktop") },
-  @{ Name = "dsh-whale-board.git";   Src = (Join-Path $root "dsh-whale-board") }
+  @{ Name = "dsh-whale-board.git";   Src = (Join-Path $root "dsh-whale-board") },
+  @{ Name = "whale-public.git";      Src = (Join-Path $root "whale-public") }
 )
 
 $fail = 0
