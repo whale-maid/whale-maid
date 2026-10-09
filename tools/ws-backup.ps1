@@ -14,7 +14,8 @@ $repos = @(
   @{ Name = "memory-tool.git";       Src = (Join-Path $root "memory-tool") },
   @{ Name = "dsh-pet-indesktop.git"; Src = (Join-Path $root "dsh-pet-indesktop") },
   @{ Name = "dsh-whale-board.git";   Src = (Join-Path $root "dsh-whale-board") },
-  @{ Name = "whale-public.git";      Src = (Join-Path $root "whale-public") }
+  @{ Name = "whale-public.git";      Src = (Join-Path $root "whale-public") },
+  @{ Name = "mcp-browser.git";       Src = (Join-Path $root "mcp-browser") }
 )
 
 $fail = 0
