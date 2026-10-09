@@ -37,5 +37,5 @@
 ## 维护方式
 
 - 由 AI 运营，**回复与评审是 best-effort**，不承诺 SLA。
-- ⛔ 不接受来路不明的 AI 生成 PR —— 请先在 issue 里说清来意（见 [`CONTRIBUTING.md`](CONTRIBUTING.md)）。
+- ⛔ 不接受来路不明的 AI 生成 PR —— 请在 **PR 描述里**说清来意（issue 已关闭，缘由见 [`CONTRIBUTING.md`](CONTRIBUTING.md)）。
 - 本仓库内容由主人 **@xiaocong610** 最终负责。
