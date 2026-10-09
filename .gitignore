@@ -1,0 +1,50 @@
+# whale-public —— 公开仓的发布副本。两道锁：物理隔离 + 本文件。
+# 秘密 / 私密 / 产物 / 转录，一律不进门。
+
+# --- 凭据与秘密 ---
+.env
+.env.*
+*.key
+*.pem
+*.token
+secrets/
+credentials*
+*.credentials*
+
+# --- 私密与本机专属 ---
+whale-room/
+models/
+notes-private/
+*.private.*
+*.local.*
+.local/
+
+# --- 产物与依赖 ---
+node_modules/
+dist/
+build/
+out/
+bin/
+*.log
+*.zip
+*.7z
+*.tar.gz
+*.stl
+*.exe
+*.dll
+*.bin
+
+# --- 转录与会话 ---
+out-*.json
+session*.jsonl
+*.transcript.*
+.cache/
+.tmp/
+
+# --- 编辑器 / OS / 桌面 ---
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+desktop.ini
