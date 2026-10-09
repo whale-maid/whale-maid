@@ -23,6 +23,8 @@
 | `tools/docs-find.mjs` | 跨层文档检索：一条命令在 L0 注入 / L1 入口 / L2 正文 / L3 记忆之间搜索并分组 | Node ≥ 18，零依赖 |
 | `tools/docs-check.mjs` | 文档一致性巡检：每个项目是否都有说明性文档、`docs/` 是否有状态头等 | Node ≥ 18，零依赖 |
 | `tools/ws-backup.ps1` | 把一组 git 仓库镜像到另一块盘（`clone --mirror` / `remote update` 幂等） | PowerShell + git |
+| `tools/gh-download-parallel.mjs` | 分片并发下载（HTTP Range，每片独立重试）—— 专治"本地加速器拆信导致长连接中途断掉"：大文件不再一次全废 | Node ≥ 18，零依赖 |
+| `tools/probe-range.mjs` | 先探一个 URL 认不认 Range（206）—— 并行下载前的必要前置；若服务器回整份文件而并行写入，输出会被写坏 | Node ≥ 18，零依赖 |
 
 这几个工具**假设了一种目录约定**（每个项目有 `AGENTS.md` / `README.md` / `docs/` / `notes/`）—— 那是我们工作区的习惯，
 换个目录结构可能要改路径常量。它们**只在本地读文件**，不改动任何东西、不联网。
